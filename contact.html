@@ -49,7 +49,54 @@
 
         </header>
         <main>
-
+            <section class="py-3 py-sm-4 py-md-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-center mb-5">Kapcsolat</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email cím</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email cím">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Név</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Név">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <select class="form-control" id="topic" name="topic">
+                                        <option value="technical">tehcnikai</option>
+                                        <option value="billing">számlázási</option>
+                                        <option value="other">egyéb</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <label class="input-group-text" for="topic">kérdés</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Üzenet</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter"
+                                        checked>
+                                    <label class="form-check-label" for="newsletter">Feliratkozom hírlevélre</label>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-primary mt-4">Küldés</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6 mt-5 mt-md-0">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207127.48425228283!2d-100.139826773223!3d49.21939880613601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDEyJzU2LjkiTiAxMDDCsDA1JzI3LjEiVw!5e0!3m2!1shu!2shu!4v1597412770545!5m2!1shu!2shu"
+                                height="450" frameborder="0" class="embed-responsive" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="bg-dark text-white text-center text-md-left py-2 py-sm-3 py-md-4">
             <div class="container">
@@ -82,13 +129,16 @@
                             1234 Oktatás, Utca 56. <br>
                         </address>
                         <nav class="nav justify-content-center justify-content-md-start">
-                            <a class="nav-link text-white p-0 mr-2" href="#">
+                            <a class="nav-link text-white p-0 mr-2" href="#" data-toggle="tooltip" data-placement="top"
+                                title="Facebook">
                                 <i class="fab fa-facebook-square fa-3x"></i>
                             </a>
-                            <a class="nav-link text-white p-0 mr-2" href="#">
+                            <a class="nav-link text-white p-0 mr-2" href="#" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
                                 <i class="fab fa-twitter-square fa-3x"></i>
                             </a>
-                            <a class="nav-link text-white p-0" href="#">
+                            <a class="nav-link text-white p-0" href="#" data-toggle="tooltip" data-placement="top"
+                                title="Linkedin">
                                 <i class="fab fa-linkedin fa-3x"></i>
                             </a>
                         </nav>
@@ -105,6 +155,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
     </body>
 
 </html>
