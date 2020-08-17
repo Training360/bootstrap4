@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <title>Oktatók</title>
+        <title>Előfizetések</title>
         <script src="https://kit.fontawesome.com/524bf66c05.js" crossorigin="anonymous"></script>
     </head>
 
@@ -28,32 +28,102 @@
                             Tanfolyamok
                         </a>
                         <div class="dropdown-menu" aria-labelledby="learningDropdown">
-                            <a class="dropdown-item" href="/courses.html">
+                            <a class="dropdown-item" href="/kurzusok.html">
                                 Tanfolyamlista
+
                             </a>
-                            <a class="dropdown-item" href="/subscriptions.html">
+                            <a class="dropdown-item active" href="/elofizetesek.html">
                                 Előfizetések
-                            </a>
-                            <a class="dropdown-item active" href="/teachers.html">
-                                Oktatók
                                 <span class="sr-only">(jelenlegi)</span>
                             </a>
+                            <a class="dropdown-item" href="/oktatok.html">Oktatók</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/faq.html">GYIK</a>
+                        <a class="nav-link" href="/gyik.html">GYIK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Kapcsolat</a>
+                        <a class="nav-link" href="/kapcsolat.html">Kapcsolat</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <header>
+            <section>
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Fluid jumbotron</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iste cumque
+                            doloremque sequi, vero culpa iure rerum eos, harum delectus omnis veniam mollitia illum
+                            libero. Quidem ea fuga pariatur quam?</p>
+                    </div>
+                </div>
+            </section>
 
+            <section class="py-3 py-sm-4 py-md-5">
+                <div class="container">
+                    <h1 class="mb-5 text-center">Előfizetések</h1>
+                    <div class="card-deck flex-column flex-lg-row">
+                        <div class="card text-center my-4 shadow-sm">
+                            <div class="card-header">
+                                <h2 class="font-weight-normal">Ingyenes</h2>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">0 HUF <small class="text-muted">/ hó</small>
+                                </h3>
+                                <ul class="list-unstyled my-3">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                </ul>
+                                <button type="button"
+                                    class="btn btn-lg btn-block btn-outline-primary mt-auto">ELőfizetek</button>
+                            </div>
+                        </div>
+                        <div class="card text-center shadow-lg">
+                            <div class="card-header">
+                                <h2 class="font-weight-normal">Alap</h2>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">10.000 HUF <small class="text-muted"> / hó</small>
+                                </h3>
+                                <ul class="list-unstyled my-3">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                </ul>
+                                <button type="button"
+                                    class="btn btn-lg btn-block btn-primary mt-auto">Előfizetek</button>
+                            </div>
+                        </div>
+                        <div class="card text-center mt-4 shadow-sm">
+                            <div class="card-header">
+                                <h2 class="font-weight-normal">Profi</h2>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title">15.000 HUF <small class="text-muted"> / hó</small>
+                                </h3>
+                                <ul class="list-unstyled my-3">
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                </ul>
+                                <button type="button"
+                                    class="btn btn-lg btn-block btn-outline-primary mt-auto">ELőfizetek</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </header>
         <main>
 
@@ -61,19 +131,19 @@
         <footer class="bg-dark text-white text-center text-md-left py-2 py-sm-3 py-md-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4 mb-4 sm-md-0">
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
                         <h5 class="mb-4">Navigáció</h5>
                         <nav class="nav flex-column">
                             <a class="text-white mb-2" href="/index.html">Főoldal</a>
                             <a class="text-white mb-2" href="/blog.html">Blog</a>
-                            <a class="text-white mb-2" href="/courses.html">Tanfolyamlista</a>
-                            <a class="text-white mb-2" href="/subscriptions.html">Előfizetések</a>
-                            <a class="text-white mb-2" href="/teachers.html">Oktatók</a>
-                            <a class="text-white mb-2" href="/faq.html">Kérdések és válaszok</a>
-                            <a class="text-white mb-2" href="/contact.html">Kapcsolat</a>
+                            <a class="text-white mb-2" href="/kurzusok.html">Tanfolyamlista</a>
+                            <a class="text-white mb-2" href="/elofizetesek.html">Előfizetések</a>
+                            <a class="text-white mb-2" href="/oktatok.html">Oktatók</a>
+                            <a class="text-white mb-2" href="/gyik.html">Kérdések és válaszok</a>
+                            <a class="text-white mb-2" href="/kapcsolat.html">Kapcsolat</a>
                         </nav>
                     </div>
-                    <div class="col-12 col-md-4 mb-4 sm-md-0">
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
                         <h5 class="mb-4">Legfrissebb bejegyzések</h5>
                         <nav class="nav flex-column">
                             <a class="text-white mb-2" href="#">Lorem ipsum</a>
