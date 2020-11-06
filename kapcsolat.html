@@ -4,31 +4,32 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://kit.fontawesome.com/e77efaebeb.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-              crossorigin="anonymous">
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
         <title>Kapcsolat</title>
-        <script src="https://kit.fontawesome.com/524bf66c05.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="d-flex flex-column min-vh-100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Learning360</a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="/index.html">Learning360</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
-                    aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainMenu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Főolal</a>
+                        <a class="nav-link" href="/index.html">Főoldal</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="learningDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="tanfolyamokDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Tanfolyamok
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="learningDropdown">
+                        <div class="dropdown-menu" aria-labelledby="tanfolyamokDropdown">
                             <a class="dropdown-item" href="/tanfolyamlista.html">Tanfolyamlista</a>
                             <a class="dropdown-item" href="/elofizetesek.html">Előfizetések</a>
                             <a class="dropdown-item" href="/oktatok.html">Oktatók</a>
@@ -41,72 +42,69 @@
                         <a class="nav-link" href="/gyik.html">GYIK</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/kapcsolat.html">Kapcsolat<span class="sr-only">(jelenlegi)</span></a>
+                        <a class="nav-link" href="/kapcsolat.html"><span class="sr-only">(jelenlegi)</span>Kapcsolat</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <header>
 
-        </header>
         <main>
             <section class="py-5">
                 <div class="container">
+                    <h1 class="mb-5 text-center">Kapcsolat</h1>
                     <div class="row">
-                        <div class="col-12">
-                            <h1 class="text-center mb-5">Kapcsolat</h1>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-5 mb-md-0">
                             <form>
                                 <div class="form-group">
                                     <label for="email" class="font-weight-bold">Email cím</label>
-                                    <input type="email" class="form-control" id="email" name="email"
-                                           placeholder="Email cím" required>
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Email cím" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="name" class="font-weight-bold">Név</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Név"
-                                           required>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Név"
+                                        required>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="message" class="font-weight-bold">Üzenet</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5"
-                                              required></textarea>
+                                    <textarea name="message" id="message" rows="5" class="form-control" required
+                                        placeholder="Üzenet"></textarea>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <select class="form-control" id="topic" name="topic" required>
-                                        <option value="technical">tehcnikai</option>
-                                        <option value="billing">számlázási</option>
-                                        <option value="other">egyéb</option>
+                                    <select name="topic" id="topic" class="form-control" required>
+                                        <option value="technikai">technikai</option>
+                                        <option value="számlázási">számlázási</option>
+                                        <option value="egyéb">egyéb</option>
                                     </select>
                                     <div class="input-group-append">
                                         <label class="input-group-text" for="topic">kérdés</label>
                                     </div>
                                 </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter"
-                                           checked>
-                                    <label class="form-check-label font-weight-bold" for="newsletter">Feliratkozom
+                                <div class="form-check mb-4">
+                                    <input type="checkbox" name="newletter" id="newletter" class="form-check-input"
+                                        checked>
+                                    <label for="newsletter" class="font-weight-bold form-check-label">Feliratkozom a
                                         hírlevélre</label>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary mt-4" data-toggle="modal"
-                                        data-target="#messageModal">Küldés</button>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#sendModal">Küldés</button>
                             </form>
                         </div>
-                        <div class="col-md-6 mt-5 mt-md-0">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207127.48425228283!2d-100.139826773223!3d49.21939880613601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDEyJzU2LjkiTiAxMDDCsDA1JzI3LjEiVw!5e0!3m2!1shu!2shu!4v1597412770545!5m2!1shu!2shu"
-                                    height="450" frameborder="0" class="embed-responsive" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                        <div class=" col-md-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125598.69313265191!2d-47.55712991969575!3d-10.345150700343433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933075b1afbb671d%3A0x41b7b447a33db092!2sLagoa%20do%20Tocantins%20-%20Tocantins%2C%20Braz%C3%ADlia!5e0!3m2!1shu!2shu!4v1600182345538!5m2!1shu!2shu"
+                                height="450" aria-hidden="false" frameborder="0" tabindex="0"
+                                class="embed-responsive"></iframe>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="bg-dark text-white text-center text-md-left py-4 mt-auto">
+
+        <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <h5 class="mb-4">Navigáció</h5>
                         <nav class="nav flex-column">
                             <a class="text-white mb-2" href="/index.html">Főoldal</a>
@@ -115,10 +113,10 @@
                             <a class="text-white mb-2" href="/elofizetesek.html">Előfizetések</a>
                             <a class="text-white mb-2" href="/oktatok.html">Oktatók</a>
                             <a class="text-white mb-2" href="/gyik.html">Kérdések és válaszok</a>
-                            <a class="text-white mb-2" href="/kapcsolat.html">Kapcsolat</a>
+                            <a class="text-white" href="kapcsolat.html">Kapcsolat</a>
                         </nav>
                     </div>
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <h5 class="mb-4">Legfrissebb bejegyzések</h5>
                         <nav class="nav flex-column">
                             <a class="text-white mb-2" href="#">Lorem ipsum</a>
@@ -128,23 +126,25 @@
                             <a class="text-white mb-2" href="#">Lorem ipsum</a>
                         </nav>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-md-4">
                         <address>
                             Learning360 Kft. <br>
-                            1234 Oktatás, Utca 56. <br>
+                            1234 Oktatás utca 56.
                         </address>
                         <nav class="nav justify-content-center justify-content-md-start">
-                            <a class="nav-link text-white p-0 mr-2" href="#" data-toggle="tooltip" data-placement="top"
-                               title="Facebook">
-                                <i class="fab fa-facebook-square fa-3x"></i>
+                            <a class="text-white mr-2" href="#" data-toggle="tooltip" data-placement="top"
+                                title="Facebook">
+                                <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+                                <span class="sr-only">Link a cég facebook oldalára</span>
                             </a>
-                            <a class="nav-link text-white p-0 mr-2" href="#" data-toggle="tooltip" data-placement="top"
-                               title="Twitter">
-                                <i class="fab fa-twitter-square fa-3x"></i>
+                            <a class="text-white mr-2" href="#" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+                                <span class="sr-only">Link a cég twitter oldalára</span>
                             </a>
-                            <a class="nav-link text-white p-0" href="#" data-toggle="tooltip" data-placement="top"
-                               title="Linkedin">
-                                <i class="fab fa-linkedin fa-3x"></i>
+                            <a class="text-white" href="#" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+                                <span class="sr-only">Link a cég linkedin oldalára</span>
                             </a>
                         </nav>
                     </div>
@@ -152,17 +152,17 @@
             </div>
         </footer>
 
-        <div class="modal" tabindex="-1" role="dialog" id="messageModal">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="sendModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Üzenet</h5>
+                        <h5 class="modal-title" id="sendModalLabel">Üzenet</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Az üzenetet sikeresen elküldtük. 24 órán belül válaszolunk a megaadott email címre.</p>
+                        Az üzenetet sikeresen elküldtük. 24 órán belül válaszolunk a megaadott email címre.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-dismiss="modal">Bezár</button>
@@ -172,14 +172,14 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
         <script src="/js/main.js"></script>
     </body>
 
